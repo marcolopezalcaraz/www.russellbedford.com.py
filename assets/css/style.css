@@ -423,7 +423,7 @@ h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/asu.jpg") top center;
+  background: url("../img/center.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -453,6 +453,17 @@ h6 {
   font-size: 24px;
 }
 
+#hero h3 {
+  color: #00a9ce;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#hero h4 {
+  color: #eee;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -703,7 +714,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #191919;
+  color: #eee;
 }
 
 .services .icon-box p {
