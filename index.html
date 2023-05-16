@@ -45,7 +45,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="changeBackground()">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -68,16 +68,16 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- <h1 class="logo"><a href="index.html">Logo</a></h1> -->
-      <img src="assets/img/logo-russell-bedford-01.svg" alt="Logo" height="70px">
+      <a href="index.html"><img src="assets/img/logo-russell-bedford-01.svg" alt="Logo" height="70px"></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="blog.html" target="_blank">Blog</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">INICIO</a></li>
+          <li><a class="nav-link scrollto" href="#about">NOSOTROS</a></li>
+          <li><a class="nav-link scrollto" href="#services">SERVICIOS</a></li>
+          <li><a class="nav-link scrollto" href="blog.html" target="_blank">NOTICIAS</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -95,7 +95,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="#contact">CONTACTO</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -143,10 +143,12 @@
         <div class="col-lg-12">
           <h2>Consultores y Auditores de Negocios con perspectiva global. Dedicados a prestar servicios personalizados,
             agregando un valor adicional a nuestros clientes.</h2>
-          <h4>Gracias a nuestra gran experiencia en los sectores financiero, de servicios, comercio e industria, y a la
+          <h4>Gracias a nuestra gran experiencia en los sectores financieros, de servicios, comercio e industria, y a la
             comprensión integral del negocio, ayudamos a nuestros clientes a reducir sus riesgos corporativos asegurando
             la confiabilidad de su información.</h4>
           <!-- <a href="#about" class="btn btn-primary">Soy un botón</a> -->
+          
+          
         </div>
       </div>
     </div>
@@ -169,36 +171,25 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Trayectoria Internacional.</h3>
             <p class="fst-italic">
-              Pertenecemos a Russell Bedford International, una red global de firmas independientes de contadores,
-              auditores, asesores fiscales y consultores empresariales con sede en Londres y posicionada entre las
-              20 firmas más grandes en la industria. <br>
-              <strong>Miembro del IFAC Forum of Firms</strong>, asociación que reúne a las Firmas Auditoras más
-              importantes del mundo.
+              Pertenecemos a Russell Bedford International, una red global de firmas independientes de contadores, auditores, 
+              asesores fiscales y consultores empresariales con sede en Londres y posicionada entre las 20 firmas más grandes de la industria.
+              <strong> Miembro del IFAC Forum of Firms</strong>, asociación que reúne a las Firmas Auditoras más importantes del mundo.
+
 
             </p>
 
             <h3>Russell Bedford Paraguay</h3>
             <p>
-              Representada localmente por Casco Consultores y Auditores, asociados localmente con el Estudio Jurídico
-              Berkemeyer Attorneys & Counselors.
-            </p>
-            <p>
-              Brindamos servicios profesionales a un gran número de empresas de primer nivel de capitales
-              internacionales y
-              nacionales, manteniendo los más altos estándares de trabajo, y cuenta actualmente con un staff de gran
-              experiencia.
-              Estamos representados a nivel local por Casco Consultores y Auditores, asociado con el Estudio Jurídico
-              Berkemeyer Attorneys & Counselors,
+              Estamos representados a nivel local por <strong>Casco Consultores y Auditores</strong>, asociado con el <span><a href="https://berke.com.py/"> Estudio Jurídico Berkemeyer Attorneys & Counselors</a></span>, 
               para brindar servicios profesionales con los más altos estándares de trabajo.
-              Nuestro equipo está compuesto por expertos altamente capacitados, con amplia experiencia en cada sector
-              donde nos desarrollamos y un profundo
-              conocimiento del mercado local. Contribuimos al crecimiento del negocio de nuestros clientes, nos
-              enfocamos en mejorar sus ventajas competitivas y
-              en transformar sus estrategias de negocios en resultados tangibles y sostenibles.
-              Gracias a las empresas miembro de nuestra Red que operan en todo el mundo, el servicio que ofrecemos es
-              verdaderamente global.
+              Nuestro equipo está compuesto por expertos altamente capacitados, con amplia experiencia en cada sector donde nos desarrollamos y un profundo 
+              conocimiento del mercado local.
+              Contribuimos al crecimiento del negocio de nuestros clientes, nos enfocamos en mejorar sus ventajas competitivas y en transformar sus estrategias 
+              de negocios en resultados tangibles y sostenibles.
+              Gracias a las empresas miembro de nuestra Red que operan en todo el mundo, el servicio que ofrecemos es verdaderamente global.
 
             </p>
+            
             <!-- <ul>
               <li><i class="bi bi-check-circle"></i> primer valor</li>
               <li><i class="bi bi-check-circle"></i> segundo valor</li>
@@ -207,97 +198,123 @@
           </div>
         </div>
 
-        <section class="mission-vision-section">
-          <div class="container">
 
-            <br><br>
-            <div class="row">
-              <div class="col-lg-4 order-lg-1">
-                <div class="vision-image">
-                  <img src="assets/img/asu.jpg" class="img-fluid custom-image-size" alt="Imagen de Visión">
-                </div>
-              </div>
-              <div class="col-lg-8 order-lg-12">
-                <div class="vision-content">
-                  <h2>Visión</h2>
-                  <p>Ser una firma líder en los servicios profesionales de auditoría y consultoría en Paraguay, con una
-                    cultura <br>
-                    organizacional comprometida con la excelencia, el profesionalismo,
-                    el desarrollo integral de cada uno de <br> sus miembros, y el éxito de nuestros clientes</p>
-                </div>
-                <div class="mission-content">
-                  <h2>Misión</h2>
-                  <p>Casco & Asociados, Contadores Públicos, se  constituyó con la misión de fortalecer la gestión y
-                    competitividad <br>
-                    de las empresas en el Paraguay, mediante sus servicios
-                    profesionales de auditoria, consultoría,
-                    contabilidad e impuestos, a través de profesionales altamente capacitados y comprometidos con sus
-                    clientes</p>
-                </div>
-              </div>
-            </div>
-            <br><br>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="mission-image">
-                  <img src="assets/img/asu.jpg" class="img-fluid custom-image-size" alt="Imagen de Misión">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="mission-content">
-                  <h2>Valores</h2>
-                  <p>Nuestros valores constituyen la filosofía compartida por todos los miembros de la Firma. Nos
-                    permiten cumplir los objetivos de la Firma y
-                    buscar ser los mejores en todo lo que hacemos.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
 
       </div>
     </section><!-- End About Section -->
+    <section id="mission" class="mission">
+      <div class="container" data-aos="zoom-in">
 
+        <br><br>
+        <div class="row">
+          <div class="col-lg-4 order-lg-1">
+            <div class="vision-image">
+              <img src="assets/img/center4.jpg" class="img-fluid custom-image-size" alt="Imagen de Visión">
+            </div>
+          </div>
+          <div class="col-lg-8 order-lg-12">
+            <div class="vision-content">
+              <h2>Visión</h2>
+              <p>Ser una firma líder en los servicios profesionales de auditoría y consultoría en Paraguay, con una
+                cultura <br>
+                organizacional comprometida con la excelencia, el profesionalismo,
+                el desarrollo integral de cada uno de <br> sus miembros, y el éxito de nuestros clientes</p>
+            </div>
+            <div class="mission-content">
+              <h2>Misión</h2>
+              <p>Casco & Asociados, Contadores Públicos, se  constituyó con la misión de fortalecer la gestión y
+                competitividad <br>
+                de las empresas en el Paraguay, mediante sus servicios
+                profesionales de auditoria, consultoría,
+                contabilidad e impuestos, a través de profesionales altamente capacitados y comprometidos con sus
+                clientes</p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="mission-image">
+              <img src="assets/img/center4.jpg" class="img-fluid custom-image-size" alt="Imagen de Misión">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="mission-content">
+              <h2>Valores</h2>
+              <p>Nuestros valores constituyen la filosofía compartida por todos los miembros de la Firma. Nos
+                permiten cumplir los objetivos de la Firma y
+                buscar ser los mejores en todo lo que hacemos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
       <div class="container">
 
         <div class="row">
-          <h1>Explora Nuestro Mundo ...</h1>
-          <div class="col-lg-3" data-aos="fade-up">
-            <div class="box">
-              <span class="counter" data-count="1000">1000</span>
-              <h4>Socios</h4>
-              <!-- <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p> -->
+          
+
+          <div class="row justify-content-center text-center">
+            <h1>Explora Nuestro Mundo ...</h1>
+            <div class="col-lg-2 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="box">
+                <span class="icon-large"><i class="bi bi-globe-americas"></i></span>
+                <span class="counter" data-count="5">5</span>
+                <h4>Continentes</h4>
+                <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
+              </div>
+            </div>
+  
+            <div class="col-lg-2 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="box">
+                <span class="icon-large"><i class="bi bi-bank"></i></span>
+                <span class="counter" data-count="350">350</span>
+                <h4>Oficinas</h4>
+                <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
+              </div>
+            </div>
+  
+            <div class="col-lg-2 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="box">
+                <span class="icon-large"><i class="bi bi-flag"></i></span>
+                <span class="counter" data-count="101">101</span>
+                <h4>Países</h4>
+                <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
+              </div>
+            </div>
+  
+            <div class="col-lg-2 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+              <div class="box">
+                <span class="icon-large"><i class="bi bi-briefcase"></i></span>
+                <span class="counter" data-count="7500">7500</span>
+                <h4>Empleados</h4>
+                <!-- <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para</p> -->
+              </div>
+            </div>
+  
+            <div class="col-lg-2" data-aos="fade-up">
+              <div class="box">
+                <span class="icon-large"><i class="bi bi-people-fill"></i></span>
+                <span class="counter" data-count="850">850</span>
+                <h4>Socios</h4>
+                <!-- <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p> -->
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
-            <div class="box">
-              <span class="counter" data-count="9000">9000</span>
-              <h4>Empleados</h4>
-              <!-- <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para</p> -->
-            </div>
-          </div>
+       
 
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <span class="counter" data-count="350">350</span>
-              <h4>Oficinas</h4>
-              <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
-            </div>
-          </div>
+          
 
-          <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <span class="counter" data-count="100">110</span>
-              <h4>Países</h4>
-              <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
-            </div>
-          </div>
+         
+
+          
 
         </div>
 
@@ -307,7 +324,7 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
-
+          <h2>Quienes nos eligen confían en nuestra manera de hacer las cosas.</h2>
         <div class="row d-flex align-items-center">
 
           <div class="col-lg-2 col-md-4 col-6">
@@ -855,12 +872,14 @@
   </footer> <!--End Footer -->
 
 
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/+595982887298" target="_blank" class="whatsapp-button">
+    <img src="assets/img/whatsapp.png" alt="WhatsApp" />
+  </a>
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
-
+ 
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -895,6 +914,7 @@
       countToTarget(target, counters[i]);
     }
   </script>
+
 
 </body>
 

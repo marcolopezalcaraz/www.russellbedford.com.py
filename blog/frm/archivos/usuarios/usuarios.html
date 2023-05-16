@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+        <title>Carga de Usuarios</title>
+        <style>
+             html{
+                            display:none;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container mt-5">
+            <div id="buscar"></div>
+            <div id="panelPrograma" class="card border border-primary">
+                <!--CABECERA-->
+                <div class="card-header bg-primary text-center text-white">
+                    Carga de Usuarios
+                </div>
+                <div class="card-body">
+                    <!--CODIGO-->
+                    <form id="formUsuario">
+                        <div class="row mb-2">
+                            <div class="col-md-2">
+                                Código
+                            </div>
+                            <div class="col-md-2">
+                                <input id="codigo" readonly name="codigo" type="text" class="form-control input-sm" placeholder="Código">
+                            </div>
+                            <div class="col-md-2">
+                                <button id="botonBuscarId" type="button" class="btn btn-primary btn-sm">Buscar</button>
+                            </div>
+                        </div>
+
+
+                        <!--NOMBRE-->
+                        <div class="row mb-2">
+                            <div class="col-md-2">
+                                Nombre
+                            </div>
+                            <div class="col-md-3">
+                                <input id="nombre" name="nombre" type="text" class="form-control input-sm" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <!--LOGIN-->
+                        <div class="row mb-2">
+                            <div class="col-md-2">
+                                Login
+                            </div>
+                            <div class="col-md-3">
+                                <input id="login" name="login" type="text" class="form-control input-sm" placeholder="Login">
+                            </div>
+                        </div>
+                        <!--PASSWORD-->
+                        <div class="row mb-2">
+                            <div class="col-md-2">
+                                Password
+                            </div>
+                            <div class="col-md-3">
+                                <input id="password" name="password" type="password" class="form-control input-sm" placeholder="Password">
+                            </div>
+                        </div>
+                        <!--REPEAT PASSWORD-->
+                        <div class="row mb-2">
+                            <div class="col-md-2">
+                                Repetir Password
+                            </div>
+                            <div class="col-md-3">
+                                <input id="repeat_password" name="repeat_password" type="password" class="form-control input-sm" placeholder="Repetir Password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <!--BOTONES DEL FOOTER-->
+
+                <div class="card-footer text-center">
+                    <button id="botonAgregar" type="submit" class="btn btn-primary btn-sm">Agregar</button>
+                    <button id="botonModificar" type="submit" class="btn btn-primary btn-sm">Modificar</button>
+                    <button id="botonEliminar" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#confirmarEliminar">Eliminar</button>
+                    <button id="botonCancelar" type="submit" class="btn btn-primary btn-sm">Cancelar</button>
+                    <button id="botonSalir" type="submit" class="btn btn-primary btn-sm">Salir</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="confirmarEliminar" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Mensaje del Sistema</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Esta seguro que desea Eliminar estos Datos?
+                    </div>
+                    <div class="modal-footer">
+                        <button id="botonEliminarAlert" type="button" class="btn btn-primary btn-sm" data-dismiss="modal">
+                            Eliminar
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mensajes" class="card card-body bg-light text-center fixed-bottom">
+            Mensajes del Sistema.
+        </div>
+        <script src="../../../js/jquery-3.3.1.min.js"></script>
+        <script src="../../../js/popper.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/funciones.js" type="text/javascript"></script>
+        <script src="js/funciones.js" type="text/javascript"></script>
+        <script>
+            verificarSesion(true);
+            $("#botonAgregar").prop('disabled', false);
+            $("#botonModificar").prop('disabled', true);
+            $("#botonEliminar").prop('disabled', true);
+            $("#botonCancelar").prop('disabled', true);
+
+            $("#botonAgregar").on("click", function () {
+                agregarUsuario();
+            });
+            $("#botonModificar").on("click", function () {
+                modificarUsuario();
+            });
+            $("#botonUsuario").on("click", function () {
+                eliminarUsuario();
+            });
+            $("#botonCancelar").on("click", function () {
+                $("#botonAgregar").prop('disabled', false);
+                $("#botonModificar").prop('disabled', false);
+                $("#botoneliminar").prop('disabled', false);
+                $("#botonCancelar").prop('disabled', false);
+                limpiarCampos();
+            });
+            $("#botonSalir").on("click", function () {
+                location.href = "../../../menu.html";
+            });
+            $("#botonBuscarId").on('click', function () {
+                $("#buscar").load("buscar.html");
+                $("#buscar").fadeIn("slow");
+                $("#panelPrograma").fadeOut("slow");
+            });
+            $("#botonEliminarAlert").on('click', function () {
+                eliminarUsuario();
+            });
+        </script>
+
+    </body>
+</html>
