@@ -564,6 +564,13 @@ section {
   }
 }
 
+.color-line {
+  height: 8px;
+  background-image: linear-gradient(to right, #00bfb3, #00bfb3 20%,  #001871 20%,  #001871 40%, #ed8b00 40%, #ed8b00 60%, #981d97 60%, #981d97 80%, #00a9ce 80%, #00a9ce);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -595,7 +602,7 @@ section {
 .mission {
   background: #f2f2f2;
   padding: 15px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .mission h2 {
@@ -616,6 +623,9 @@ section {
   background-color: #000;
 }
 
+.valores {
+  text-align: right;
+}
 
 /*--------------------------------------------------------------
 # Why Us
