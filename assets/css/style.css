@@ -771,11 +771,11 @@ color: #00a9ce;
 }
 
 .services .icon-box:hover .icon i {
-  color: #cc1616;
+  color: #00a9ce;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #e82d2d;
+  background: #00a9ce;
 }
 
 .services .icon-box:hover h4 a,
@@ -786,6 +786,7 @@ color: #00a9ce;
 .services h2 {
   color: #00a9ce;
 }
+
 
 /*--------------------------------------------------------------
 # Cta
