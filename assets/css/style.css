@@ -191,6 +191,7 @@ h6 {
   margin-top: 70px;
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -225,7 +226,7 @@ h6 {
   justify-content: space-between;
   padding: 25px 15px 24px 15px;
   font-size: 14px;
-  color: #000000;
+  color:  #939598;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -241,7 +242,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  background: #ed8b00;
+  background:    #ed8b00; opacity: 100%;
 }
 
 .navbar .dropdown ul {
@@ -632,6 +633,7 @@ section {
 --------------------------------------------------------------*/
 .why-us {
   padding-top: 10px;
+  background-image: url('assets/img/bg-servicios.jpg');
 }
 
 .why-us .box {
