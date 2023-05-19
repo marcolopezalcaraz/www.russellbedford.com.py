@@ -1,0 +1,65 @@
+<html>
+    <head lang="es">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!--<link href="css/estilos.css" rel="stylesheet" type="text/css">-->
+        <title>IDT | PHP</title>
+        <style>
+            html{
+                            display:none;
+            }
+            body{
+                background: url("img/fondo.jpg") no-repeat center center fixed;
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Russell Bedford Paraguay</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Formularios</a>
+                        <div class="dropdown-menu" aria-labelledby="navBarDropdown">
+                            <!-- <a class="dropdown-item" href="frm/archivos/usuarios/usuarios.html">Usuarios</a> -->
+                            <!-- <a class="dropdown-item" href="frm/archivos/productos/index.html">Productos</a> -->
+                            <a class="dropdown-item" href="frm/archivos/publicaciones/index.html">Publicaciones</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Informes</a>
+                        <div class="dropdown-menu" aria-labelledby="navBarDropdown">
+                            <a class="dropdown-item" href="frm/listados/usuarios/index.html">Usuarios</a>
+                            <a class="dropdown-item" href="frm/listados/productos/index.html">Productos</a>
+                            <a class="dropdown-item" href="frm/listados/publicaciones/index.html">Publicaciones</a>
+                        </div>
+                    </li> -->
+                </ul>
+                <ul class="navbar-nav mr-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">cerrar sesion</a>
+                        <div class="dropdown-menu" aria-labelledby="navBarDropdown">
+                            <a class="dropdown-item" href="login.html">confirmar</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/funciones.js"></script>
+        <script>
+            verificarSesion(false);
+        </script>
+    </body>
+</html>
