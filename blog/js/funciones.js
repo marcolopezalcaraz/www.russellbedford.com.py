@@ -82,34 +82,6 @@ function cerrarSesion(){
     });
 }
 
-var pagina=1;
-function listarProductos(){
-    var formData = {
-        pagina:pagina
-    };
-    $.ajax({
-        url: "php/buscarProductos.php",
-        type: "post",
-        dataType: "html",
-        data: formData,
-        beforeSend: function (){
-            $("#buscarMas").css("visibility","visible");
-            $("#botonMostrarMas").css("display","none");
-        },
-        success:function(res){
-            $("#buscarMas").css("visibility","hidden");
-            $("#botonMostrarMas").css("display","inline");
-            $("#productos").append(res);
-            pagina++;
-            if(res.trim()==""){
-                $("#botonMostrarMas").css("display","none");
-            }
-        },
-        error: function(error){
-            alert("Error:"+error.responseText);
-        }
-    });
-}
 
 var publicacion=1;
 function listarPublicaciones(){

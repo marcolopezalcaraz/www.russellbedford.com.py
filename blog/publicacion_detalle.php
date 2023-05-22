@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Detalle de la Publicacion</title>
-        <link rel="icon" type="image/png" href="img/logo.png">
+        <link rel="icon" type="image/png" href="">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
