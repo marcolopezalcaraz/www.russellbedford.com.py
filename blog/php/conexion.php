@@ -1,5 +1,5 @@
 <?php
 //#Conectamos con MYSQL
-$mysqli=new mysqli("localhost","root","","jueves");
+$mysqli=new mysqli("localhost","root","","blog");
 
 ?>

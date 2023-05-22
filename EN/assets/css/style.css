@@ -1344,7 +1344,7 @@ color: #00a9ce;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #2c3483;
+  background: url("../img/background.jpg") top center;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
