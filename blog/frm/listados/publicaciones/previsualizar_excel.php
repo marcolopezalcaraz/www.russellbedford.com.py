@@ -14,8 +14,8 @@ $resEmp = $mysqli->query($consulta);
 ?>
 <html>
     <body>
-        <h1>IDT</h1>
-        <h2>Ejemplo de Excel con PHP y MYSQL</h2>
+        <h1>RBPY</h1>
+        <h2>Listado de publicaciones</h2>
         <table border="1">
             <tr><td>Codigo</td><td>Nombre</td></tr>
             <?php
